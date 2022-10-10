@@ -8,8 +8,10 @@
 def Weekend(day):
     if day == 6 or day == 7:
         print('да')
-    else:
+    elif 0<day<6:
         print('нет')
+    else:
+        print('Введите верное значение дня недели')
 
 
 day = int(input('Введите число дня недели: '))
