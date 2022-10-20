@@ -4,11 +4,11 @@
 #
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
 
-k = int(input())
-some_list = [0] * (k * 2 + 1)
-some_list[k + 1] = 1
-for idx in range(k + 2, k * 2 + 1):
-    some_list[idx] = some_list[idx - 1] + some_list[idx - 2]
-for idx in range(k, -1, -1):
-    some_list[idx] = some_list[idx + 2] - some_list[idx + 1]
-print(some_list)
+num = int(input())
+lst = [0] * (num * 2 + 1)
+lst[num + 1] = 1
+for i in range(num + 2, num * 2 + 1):
+    lst[i] = lst[i - 1] + lst[i - 2]
+for i in range(num, -1, -1):
+    lst[i] = lst[i + 2] - lst[i + 1]
+print(lst)
