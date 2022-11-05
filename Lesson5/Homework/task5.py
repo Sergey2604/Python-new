@@ -15,7 +15,7 @@ def koefficients(k: int):
 
 
 def to_file():
-    with open('task4.txt', 'w', encoding='utf-8') as f:
+    with open('task5.txt', 'w', encoding='utf-8') as f:
         f.write(koefficients(k))
 
 
