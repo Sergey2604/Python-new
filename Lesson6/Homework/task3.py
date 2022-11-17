@@ -27,8 +27,8 @@ def sorting(new_lst):
     new_lst.sort(reverse=True)
     print('Сортировка по убыванию - ', new_lst)
     maxi = []
-    while len(maxi) < 5:
-        for i in new_lst:
+    for i in new_lst:
+        if len(maxi)<5:
             maxi.append(i)
 
     print('Отсортированная по убыванию пятерка цен', maxi)
